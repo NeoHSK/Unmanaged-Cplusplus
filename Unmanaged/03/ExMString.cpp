@@ -41,4 +41,5 @@ void ExMString::Run()
 	Name.Print();
 	copyName.Print();
 
+	//delete Name;
 }
