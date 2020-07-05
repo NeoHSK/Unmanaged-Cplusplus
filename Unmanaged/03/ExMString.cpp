@@ -41,5 +41,6 @@ void ExMString::Run()
 	Name.Print();
 	copyName.Print();
 
+	//local 인 경우에는 메모리 관리 해야하나?
 	//delete Name;
 }
