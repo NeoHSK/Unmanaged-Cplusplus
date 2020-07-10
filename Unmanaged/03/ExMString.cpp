@@ -34,13 +34,16 @@ void ExMString::Print()
 void ExMString::Run()
 {
 	std::cout << "	----	Ex Stream	----	" << std::endl;
-
+	/*copy constructor */
 	ExMString Name("Neo Kim");
 	ExMString copyName(Name);
+
+	std::cout << "	----	Memory Address	----	" << std::endl;
+	std::cout << &Name << std::endl;
+
+	std::cout << "	----	Ex Stream	----	" << std::endl;
 	
 	Name.Print();
 	copyName.Print();
-
-	//local 인 경우에는 메모리 관리 해야하나?
-	//delete Name;
 }
+
