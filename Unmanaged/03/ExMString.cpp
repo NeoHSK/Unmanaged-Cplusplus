@@ -5,7 +5,6 @@
 ExMString::ExMString()
 {
 }
-
 ExMString::ExMString(const char* str)
 	:mSize(strlen(str)+1)
 {
@@ -34,6 +33,7 @@ void ExMString::Print()
 void ExMString::Run()
 {
 	std::cout << "	----	Ex Stream	----	" << std::endl;
+
 	/*copy constructor */
 	ExMString Name("Neo Kim");
 	ExMString copyName(Name);

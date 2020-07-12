@@ -2,9 +2,14 @@
 //
 
 #include <iostream>
-#include "../02/MVector.h"
+#include "Vector.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::cout << "04\n";
+
+	Vector v;
+
+	v.Run();
+	
 }
