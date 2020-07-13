@@ -8,8 +8,17 @@ int main()
 {
     std::cout << "04\n";
 
-	Vector v;
+	Vector *v = new Vector();
 
-	v.Run();
-	
+	v->Run();
+
+#if 0
+	Vector v1[3];
+
+	Vector *v2 = new Vector[3]();
+
+	v1[0].Run();
+	v2[0].Run();
+	v2->Run();
+#endif
 }
