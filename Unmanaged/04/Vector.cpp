@@ -224,9 +224,10 @@ void Vector::Run()
 
 }
 
-/* 아무 생성자도 호출 되지 않는다 C Style*/
 void Vector::Out(Vector* out, Vector& in1, Vector& in2)
 {
 	out->mX = in1.mX* in2.mX;
+	*out = in1 * in2;
+
 }
 
