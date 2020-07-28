@@ -1,22 +1,23 @@
 ﻿#include "LinkedList.h"
 #include <iostream>
+#include "LinkedList.h"
 
 int main()
 {
 	std::unique_ptr<List<int>> myLinkedList = std::make_unique<LinkedList<int>>();
 
-#if 0
-	myLinkedList->insert(1);
-	myLinkedList->insert(2);
-	myLinkedList->insert(3);
-	myLinkedList->insert(4);
-	myLinkedList->traverseList();
+	myLinkedList->Insert(1);
+	myLinkedList->Insert(2);
+	myLinkedList->Remove(4);
+	myLinkedList->Insert(3);
+	myLinkedList->Insert(4);
+	myLinkedList->Insert(2);
+	//myLinkedList->Insert(4);
+	myLinkedList->TraverseList();
 
 	//O(1)
-	myLinkedList->remove(4);
-	myLinkedList->traverseList();
-#endif
-	myLinkedList->Remove(4);
+	//myLinkedList->Remove(4);
+	//myLinkedList->TraverseList();
 	
 	return 0;
 }
