@@ -72,31 +72,6 @@ int fibonachi(int n)
 }
 
 
-int fibonachi(int n)
-{
-	/*Base case */
-	if (n <= 1)
-		return n;
-
-#if 0
-	int fb1, fb2;
-
-	fb1 = fibonachi(n - 1);
-	fb2 = fibonachi(n - 2);
-
-	return fb1 + fb2;// +fibonachi(n - 2);
-#else
-	return fibonachi(n - 1) + fibonachi(n - 2);
-
-#endif
-}
-
-
-int fibonachi(int n)
-{
-
-
-}
 
 int main()
 {
